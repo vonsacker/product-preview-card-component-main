@@ -1,0 +1,134 @@
+/********** INDEX.CSS STYLESHEET **********/
+
+/* colors */
+:root {
+   --Dark-Cyan: hsl(158, 36%, 37%);
+   --Cream: hsl(30, 38%, 92%);
+
+   --Very-Dark-Blue: hsl(212, 21%, 14%);
+   --Dark_Grayish-Blue: hsl(228, 12%, 48%);
+   --White: hsl(0, 0%, 100%)
+}
+
+/* body and main content */
+body {
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+.container {
+    margin: 30px auto;
+    padding: 0 30px; 
+}
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 650px;
+    background-color: var(--White);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.img_div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 20px 30px ; 
+}
+
+.price_div {
+    display: flex;
+ 
+
+}
+
+
+
+/* typography */
+#title_h4 {
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 500;
+    color: var(--Dark_Grayish-Blue);
+    letter-spacing: 0.5em;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-family: "Fraunces", 'Serif';
+    font-weight: 700;
+    font-size: 40px;
+}
+p {
+    font-family: "Montserrat";
+    color: var(--Dark_Grayish-Blue);
+    font-size: 15px;
+
+    
+}
+
+#price {
+    color: var(--Dark-Cyan);
+    display: inline-block;
+   
+
+}
+#old_price {
+    font-family: "Montserrat";
+    color: var(--Dark_Grayish-Blue);
+    text-decoration: line-through;
+    font-weight: 500;
+    display: block;
+
+    margin-inline-start: 20px;
+    margin-block-start: 30px;
+}
+
+/* button layout */
+button {
+    font-family: "Montserrat";
+    color: white;
+    background-color: var(--Dark-Cyan);
+    border: none;
+    padding: 16px 0;
+    border-radius: 10px;
+    margin-block-end: 20px;
+
+}
+button img {
+    padding-inline-end: 10px;
+}
+button span {
+    font-weight: 600;
+}
+
+
+/* media screen */
+@media only screen and (max-width:625px) {
+    .container {
+        padding:0 10px;
+    }
+    .card {
+        grid-template-columns: 1fr;
+    }
+    .img_div img {
+        max-height: 300px;
+        object-fit: cover;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    
+    
+
+}
+
+/* attribution styling */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
