@@ -1,6 +1,6 @@
 # Live Site
 
-[Check out the live site!](https://your-live-site-url.com)
+[Check out the live site!](https://vonsacker.github.io/product-preview-card-component-main/)
 # Screenshot
 
 Desktop screenshot
